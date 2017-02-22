@@ -285,7 +285,7 @@ bool ThreePointStrategy::doProbing(StreamOutput *stream)
     THEROBOT->reset_axis_position(std::get<Z_AXIS>(this->probe_offsets), Z_AXIS);
 
     // move up to specified probe start position
-    zprobe->coordinated_move(NAN, NAN, zprobe->getProbeHeight(), zprobe->getSlowFeedrate()); // move to probe start position
+    zprobe->coordinated_move(NAN, NAN, zprobe->getProbeHeight(), zprobe->getReturnFeedrate()); // move to probe start position
 
     // probe the three points
     Vector3 v[3];

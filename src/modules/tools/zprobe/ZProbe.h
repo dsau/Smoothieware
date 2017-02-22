@@ -42,6 +42,7 @@ public:
     bool getProbeStatus() { return this->pin.get(); }
     float getSlowFeedrate() const { return slow_feedrate; }
     float getFastFeedrate() const { return fast_feedrate; }
+    float getReturnFeedrate() const { return return_feedrate; }
     float getProbeHeight() const { return probe_height; }
     float getMaxZ() const { return max_z; }
 
